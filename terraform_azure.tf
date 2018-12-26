@@ -1,5 +1,5 @@
 variable "prefix" {
-  default = "Anoop-Terraform"
+  default = "<NAME>"
 }
 
 resource "azurerm_resource_group" "main" {
@@ -59,9 +59,9 @@ resource "azurerm_virtual_machine" "main" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name  = "hostname"
-    admin_username = "minduser"
-    admin_password = "Minduser@123$"
+    computer_name  = "<HOSTNAME>"
+    admin_username = "<USER>"
+    admin_password = "<PASSWORD>"
   }
   os_profile_linux_config {
     disable_password_authentication = false
